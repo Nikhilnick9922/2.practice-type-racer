@@ -106,3 +106,8 @@ src/
 |-- App.tsx             // Main application component, layout assembly
 |-- main.tsx            // Entry point of the React application
 |-- index.html
+
+
+
+
+

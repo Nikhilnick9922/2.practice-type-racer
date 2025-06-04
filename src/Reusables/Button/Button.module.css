@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+    --padding-large: 16px
+}
+
+
+.btn {
+
+
+    font-weight: 600;
+    border: 0;
+    outline: 0;
+    border-radius: 3px;
+    overflow: hidden;
+    font-family: Lato;
+    color: #f7faf6;
+    font-weight: 600;
+}
+
+.btn:hover {
+    filter: brightness(0.85) !important;
+}
+
+.btnYellow {
+    background-color: #ffd61e;
+    color: #25668b;
+}
+
+.btnSmall {
+
+    padding: 2px 5px;
+    letter-spacing: 1px;
+    font-size: 11px;
+}
+
+
+.btnNormal {
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+
+
+.btnLarge {
+    padding: var(--padding-large);
+    font-size: 15px;
+}
+
+
+.btnLong {
+    padding: var(--padding-large, 10px) 35px;
+}
