@@ -1,0 +1,108 @@
+src/
+|-- assets/
+|   |-- images/         // For static images like logos, icons not handled by an icon library
+|   |-- icons/          // SVG icons if used directly
+|
+|-- components/         // Main feature components
+|   |-- App/
+|   |   |-- App.tsx
+|   |   |-- App.module.css
+|   |
+|   |-- Header/
+|   |   |-- Header.tsx
+|   |   |-- Header.module.css
+|   |   |-- NavLinks/
+|   |   |   |-- NavLinks.tsx
+|   |   |   |-- NavLinks.module.css
+|   |   |-- UserAuth/
+|   |   |   |-- UserAuth.tsx
+|   |   |   |-- UserAuth.module.css
+|   |
+|   |-- CallToActionBanner/
+|   |   |-- CallToActionBanner.tsx
+|   |   |-- CallToActionBanner.module.css
+|   |
+|   |-- PracticeMode/
+|   |   |-- PracticeMode.tsx
+|   |   |-- PracticeMode.module.css
+|   |   |-- PracticeIntro/
+|   |   |   |-- PracticeIntro.tsx
+|   |   |   |-- PracticeIntro.module.css
+|   |   |-- RaceStatus/
+|   |   |   |-- RaceStatus.tsx
+|   |   |   |-- RaceStatus.module.css
+|   |   |-- TextDisplay/
+|   |   |   |-- TextDisplay.tsx
+|   |   |   |-- TextDisplay.module.css
+|   |   |-- RaceTrackView/
+|   |   |   |-- RaceTrackView.tsx
+|   |   |   |-- RaceTrackView.module.css
+|   |   |-- TypingInput/
+|   |   |   |-- TypingInput.tsx
+|   |   |   |-- TypingInput.module.css
+|   |   |-- RaceOptions/
+|   |   |   |-- RaceOptions.tsx
+|   |   |   |-- RaceOptions.module.css
+|   |   |-- LeavePracticeButton/
+|   |   |   |-- LeavePracticeButton.tsx
+|   |   |   |-- LeavePracticeButton.module.css
+|   |
+|   |-- HighScoreDisplay/
+|   |   |-- HighScoreDisplay.tsx
+|   |   |-- HighScoreDisplay.module.css
+|   |   |-- HighScoreTable/
+|   |   |   |-- HighScoreTable.tsx
+|   |   |   |-- HighScoreTable.module.css
+|   |   |-- HighScoreRow/
+|   |   |   |-- HighScoreRow.tsx
+|   |   |   |-- HighScoreRow.module.css
+|   |   |-- RefreshSection/  // Combines button and auto-update text
+|   |   |   |-- RefreshSection.tsx
+|   |   |   |-- RefreshSection.module.css
+|   |
+|   |-- Footer/
+|   |   |-- Footer.tsx
+|   |   |-- Footer.module.css
+|   |   |-- FooterNavLinks/
+|   |   |   |-- FooterNavLinks.tsx
+|   |   |   |-- FooterNavLinks.module.css
+|   |   |-- SocialMediaLinks/
+|   |   |   |-- SocialMediaLinks.tsx
+|   |   |   |-- SocialMediaLinks.module.css
+|   |   |-- ThemeSwitcher/
+|   |   |   |-- ThemeSwitcher.tsx
+|   |   |   |-- ThemeSwitcher.module.css
+|   |   |-- Copyright/
+|   |   |   |-- Copyright.tsx
+|   |   |   |-- Copyright.module.css
+|   |   |-- BrandLogo/ // For the Shockwave logo
+|   |   |   |-- BrandLogo.tsx
+|   |   |   |-- BrandLogo.module.css
+|
+|-- reusable/           // Common, generic components
+|   |-- Button/
+|   |   |-- Button.tsx
+|   |   |-- Button.module.css
+|   |-- LinkItem/        // If needing more than a basic <a>
+|   |   |-- LinkItem.tsx
+|   |   |-- LinkItem.module.css
+|   |-- Icon/
+|   |   |-- Icon.tsx
+|   |   |-- Icon.module.css
+|   |-- Dropdown/
+|   |   |-- Dropdown.tsx
+|   |   |-- Dropdown.module.css
+|   |-- Logo/
+|   |   |-- Logo.tsx      // For the main "typeracer" logo
+|   |   |-- Logo.module.css
+|   |-- Table/            // Generic table structure if needed
+|   |   |-- Table.tsx
+|   |   |-- Table.module.css
+|
+|-- styles/             // Global styles and variables
+|   |-- global.css
+|   |-- variables.css     // For CSS variables (colors, fonts, etc.)
+|
+|-- App.tsx             // Main application component, layout assembly
+|-- main.tsx            // Entry point of the React application
+|-- index.html
