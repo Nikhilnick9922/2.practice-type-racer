@@ -25,3 +25,8 @@ export default Button;
 //  background-color: #ffd61e; yellow
 //  background-color : #e68200; orange
 //  background-color : #ffb11b; light orange
+
+// <div className="btnGroup">
+//     <Button color="#00bcf5" title="Refresh  XX" classes={["btnNormal"]} />
+//     <i className="fa fa-refresh" aria-hidden="true"></i>
+//   </div>

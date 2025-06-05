@@ -1,13 +1,10 @@
-import Button from "./Reusables/Button/Button";
 import "./App.css";
+import ListItems from "./Reusables/ListItems/ListItems";
 
 const App = () => {
   return (
     <div className="container">
-      <div className="btnGroup">
-        <Button color="#00bcf5" title="Refresh  XX" classes={["btnNormal"]} />
-        <i className="fa fa-refresh" aria-hidden="true"></i>
-      </div>
+      <ListItems items={["one", "two", "three", "four"]} />
     </div>
   );
 };
