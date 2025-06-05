@@ -1,10 +1,10 @@
 import "./App.css";
-import ListItems from "./Reusables/ListItems/ListItems";
+import Header from "./components/Header/Header";
 
 const App = () => {
   return (
     <div className="container">
-      <ListItems items={["one", "two", "three", "four"]} />
+      <Header />
     </div>
   );
 };

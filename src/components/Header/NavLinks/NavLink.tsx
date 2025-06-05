@@ -1,7 +1,12 @@
-import React from "react";
+import ListItems from "../../../Reusables/ListItems/ListItems";
 
 const NavLink = () => {
-  return <div>NavLink</div>;
+  return (
+    <ListItems
+      classList={["topLinkLists"]}
+      items={["Pit Stop", "Updates", "Discord", "About", "Merch"]}
+    />
+  );
 };
 
 export default NavLink;

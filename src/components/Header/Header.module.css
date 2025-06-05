@@ -1,0 +1,25 @@
+.header {
+    background-color: #015893;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.logoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.racingLogo {
+    width: 35px;
+    height: 35px;
+    /* margin-top: 5px; */
+}
+
+
+.logoText {
+    color: white;
+    font-size: 12px;
+}

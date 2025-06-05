@@ -2,10 +2,13 @@ import styles from "./listItems.module.css";
 
 interface Props {
   items: string[];
+  classList: string[];
 }
 
-const ListItems = ({ items }: Props) => {
-  const classNames = [styles.list, items.map((cls) => styles[cls])].join(" ");
+const ListItems = ({ items, classList }: Props) => {
+  const classNames = [styles.list, classList.map((cls) => styles[cls])].join(
+    " "
+  );
   return (
     <ul>
       {items.map((item, index) => (
