@@ -1,0 +1,34 @@
+ .callContainer {
+     background-color: var(--color-primary);
+     color: white;
+     /* border: 1px solid red; */
+     height: 90px;
+     margin: 0 0px;
+     border-radius: 7px;
+     overflow: hidden;
+
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+
+ .callHeading {
+     font-size: 22px;
+     margin-bottom: 0;
+     margin-top: 0;
+ }
+
+ .btnContainer {
+     margin-right: 25px;
+     margin-bottom: 0px;
+ }
+
+ .headingText {
+     margin-left: 22px;
+     margin-bottom: 10px;
+ }
+
+ .callText {
+     font-size: 14px;
+ }
