@@ -1,11 +1,10 @@
 import "./App.css";
-import CallToActionBanner from "./components/CallToActionBanner/CallToActionBanner";
-import RandomText from "./components/RandomText/RandomText";
+import PracticeMode from "./components/PracticeMode/PracticeMode";
 
 const App = () => {
   return (
     <div className="container">
-      <RandomText />
+      <PracticeMode />
     </div>
   );
 };
