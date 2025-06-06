@@ -1,0 +1,48 @@
+.randDomTextContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid green;
+    padding: 15px 5px;
+
+}
+
+.randonHeading {
+    margin-bottom: 0;
+    color: var(--color-primary);
+    font-size: 22px;
+    margin-top: 0;
+}
+
+.textLinkContainer span {
+    font-size: 15px;
+}
+
+.textLinkContainer span a,
+.linkContainer a {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+.textLinkContainer span a:hover,
+.linkContainer a:hover {
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+
+.linkContainer {
+    /* margin-bottom: 20px; */
+    display: flex;
+}
+
+
+.linkContainer img {
+    /* border: 1px solid red; */
+    width: 27px;
+    position: relative;
+
+    top: -3px;
+
+
+}

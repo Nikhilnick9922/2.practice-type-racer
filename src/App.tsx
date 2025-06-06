@@ -1,10 +1,11 @@
 import "./App.css";
 import CallToActionBanner from "./components/CallToActionBanner/CallToActionBanner";
+import RandomText from "./components/RandomText/RandomText";
 
 const App = () => {
   return (
     <div className="container">
-      <CallToActionBanner />
+      <RandomText />
     </div>
   );
 };
