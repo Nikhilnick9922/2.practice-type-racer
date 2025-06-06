@@ -3,6 +3,7 @@ import car from "../../assets/icons/car.png";
 import questionMark from "../../assets/icons/questionMark.png";
 import lock from "../../assets/icons/lock.png";
 import Button from "../../Reusables/Button/Button";
+import ExpandingTag from "../../Reusables/ExpandingShape/ExpandingTag";
 
 const PracticeMode = () => {
   return (
@@ -13,6 +14,15 @@ const PracticeMode = () => {
 
       <div className={styles.carAndWpmContainer}>
         <div className={styles.txtAndCar}>
+          <div className={styles.expandingType}>
+            <ExpandingTag
+              title={
+                <text>
+                  Type <br /> This
+                </text>
+              }
+            />
+          </div>
           <span>
             Guest
             <br />
@@ -35,7 +45,9 @@ const PracticeMode = () => {
           <span></span> <a href="">change display format</a>
         </div>
         <input type="text" />
-
+        <div className={styles.expandingHere}>
+          <ExpandingTag title={<text>Here</text>} />
+        </div>
         <div className={styles.temp}>
           <span></span> <img src={questionMark} alt="" />
         </div>

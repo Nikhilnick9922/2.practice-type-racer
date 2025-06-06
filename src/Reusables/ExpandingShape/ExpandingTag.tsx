@@ -1,11 +1,22 @@
+import { ReactNode } from "react";
 import styles from "./ExpandingShape.module.css";
 
-const ExpandingTag = () => {
-  return (
-    <div className={styles.tagShape}>
-      Type <br /> This
-    </div>
-  );
+interface Props {
+  title: ReactNode;
+}
+
+const ExpandingTag = ({ title }: Props) => {
+  return <div className={styles.tagShape}>{title}</div>;
 };
 
 export default ExpandingTag;
+
+//  <ExpandingTag
+//         title={
+//           <text>
+//             Type
+//             <br />
+//             This
+//           </text>
+//         }
+//       />

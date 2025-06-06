@@ -20,7 +20,7 @@
 
 .txtAndCar {
     display: flex;
-    margin-left: 50px;
+    margin-left: 80px;
 
 }
 
@@ -38,7 +38,7 @@
 .carAndWpmContainer {
     display: flex;
     justify-content: space-between;
-
+    position: relative;
 
 }
 
@@ -150,4 +150,20 @@
 .menuContainer {
     /* margin-top: 30px; */
     padding: 30px 20px;
+}
+
+
+.expandingType {
+    position: absolute;
+    left: 0px;
+    bottom: -10px;
+    z-index: 3;
+}
+
+.expandingHere {
+    position: absolute;
+    left: 20px;
+    margin-top: 4px;
+    /* bottom: -10px; */
+    z-index: 3;
 }
