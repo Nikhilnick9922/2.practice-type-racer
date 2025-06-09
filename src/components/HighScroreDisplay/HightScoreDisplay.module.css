@@ -90,3 +90,30 @@
     text-align: center;
     /* Explicitly center content in SR header and data cells */
 }
+
+.refreshContainer {
+    /* border: 1px solid grey; */
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn {
+    padding: 10px 25px;
+    border-radius: 5px;
+    border: 0;
+    background-color: #00bcf5;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-size: 15px;
+}
+
+
+.refreshTimer {
+    font-style: italic;
+    font-size: 14px;
+}

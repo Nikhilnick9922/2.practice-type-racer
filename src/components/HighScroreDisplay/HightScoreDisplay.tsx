@@ -2,6 +2,8 @@
 import React from "react";
 import styles from "./HightScoreDisplay.module.css";
 import DropDown from "./DropDown/DropDown";
+import { FiRefreshCw } from "react-icons/fi";
+import Timer from "./Timer/Timer";
 
 interface RowData {
   sr: number;
@@ -139,6 +141,14 @@ const HighScoreDisplay: React.FC = () => {
           ))}
         </tbody>
       </table>
+      <div className={styles.refreshContainer}>
+        <button className={styles.btn}>
+          Refresh <FiRefreshCw />
+        </button>
+        <span className={styles.refreshTimer}>
+          Auto-updating in <Timer />
+        </span>
+      </div>
     </div>
   );
 };
