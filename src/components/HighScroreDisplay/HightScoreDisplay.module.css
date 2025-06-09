@@ -1,0 +1,83 @@
+/* HighScoreDisplay.module.css */
+
+:root {
+    /* --- HIGHLIGHT START --- */
+    /* Changed border color to a slightly darker shade for better visibility */
+    --color-border: #c2d6e9;
+    /* A desaturated blue-grey */
+    /* --- HIGHLIGHT END --- */
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+
+    border-radius: 5px;
+    overflow: hidden;
+    /* Ensures border-radius works on children */
+    font-size: 12.8px;
+    border: 1px solid var(--color-border);
+    /* Border for the entire table */
+}
+
+.table thead th {
+    background-color: #0067af;
+    /* Dark blue header background */
+    color: white;
+    padding: 10px;
+    text-align: left;
+    /* border: 1px solid var(--color-border); */
+    /* Header borders */
+    /* Because of border-collapse, this creates the top, left, right, and internal borders of the header */
+}
+
+.table tbody tr:nth-child(odd) {
+    background-color: white;
+    /* --- HIGHLIGHT START --- */
+    /* Removed border from tr as td/th borders are handled by border-collapse */
+    /* border: 1px solid var(--color-border); */
+    /* --- HIGHLIGHT END --- */
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #eeeeee;
+    /* Every 2nd row is light grey */
+    /* --- HIGHLIGHT START --- */
+    /* Removed border from tr as td/th borders are handled by border-collapse */
+    /* border: 1px solid var(--color-border); */
+    /* --- HIGHLIGHT END --- */
+}
+
+.table tbody td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid var(--color-border);
+    /* Cell borders (this is what creates internal row/column lines) */
+}
+
+.srColumn {
+    background-color: #e4f3ff;
+    /* Light blue background for SR column */
+    width: 25px;
+    /* SR column width */
+
+
+}
+
+.timeCl {
+    color: #9abfd6;
+}
+
+.speedCl {
+    color: #838588;
+}
+
+.nameCl {
+    color: #5081a3;
+}
+
+
+.table tbody td.srColumn {
+    text-align: center;
+    /* Explicitly center content in SR header and data cells */
+}
