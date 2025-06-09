@@ -1,6 +1,7 @@
 // HighScoreDisplay.tsx
 import React from "react";
 import styles from "./HightScoreDisplay.module.css";
+import DropDown from "./DropDown/DropDown";
 
 interface RowData {
   sr: number;
@@ -115,27 +116,30 @@ const HighScoreDisplay: React.FC = () => {
   ];
 
   return (
-    <table className={styles.table}>
-      <thead>
-        <tr>
-          <th className={styles.srColumn}> </th>
+    <div className={styles.container}>
+      <DropDown />
+      <table className={styles.table}>
+        <thead>
+          <tr>
+            <th className={styles.srColumn}> </th>
 
-          <th>Name</th>
-          <th>Speed</th>
-          <th>Time</th>
-        </tr>
-      </thead>
-      <tbody>
-        {data.map((row) => (
-          <tr key={row.sr}>
-            <td className={styles.srColumn}>{row.sr}</td>
-            <td className={styles.nameCl}>{row.name}</td>
-            <td className={styles.speedCl}>{row.speed}</td>
-            <td className={styles.timeCl}>{row.time}</td>
+            <th>Name</th>
+            <th>Speed</th>
+            <th>Time</th>
           </tr>
-        ))}
-      </tbody>
-    </table>
+        </thead>
+        <tbody>
+          {data.map((row) => (
+            <tr key={row.sr}>
+              <td className={styles.srColumn}>{row.sr}</td>
+              <td className={styles.nameCl}>{row.name}</td>
+              <td className={styles.speedCl}>{row.speed}</td>
+              <td className={styles.timeCl}>{row.time}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
   );
 };
 

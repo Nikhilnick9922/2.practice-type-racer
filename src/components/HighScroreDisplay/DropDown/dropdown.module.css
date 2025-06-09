@@ -1,0 +1,102 @@
+:root {
+    --color-background: #015893;
+}
+
+.dropdownContainer {
+    position: relative;
+    width: 100%;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    background-color: var(--color-background);
+    color: white;
+    font-size: 24px;
+    margin-bottom: 17px;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    /* Added to contain the children */
+}
+
+.dropdownHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    border-radius: 5px;
+    background-color: var(--color-background);
+    cursor: pointer;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+.dropdownHeader:focus {
+    outline: none;
+}
+
+/*
+ * MODIFIED: The list now overlays the header by starting at top: 0
+ */
+.dropdownList {
+    position: absolute;
+    top: -45%;
+    /* Changed from 40% to 0 to overlay the header */
+    left: 0;
+    width: 100%;
+    padding: 0;
+    list-style: none;
+    /* background-color: var(--color-background); */
+    background: linear-gradient(180deg, black, blue);
+
+    border-radius: 4px;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+/*
+ * MODIFIED: List items now use flexbox for alignment
+ */
+.dropdownItem {
+    padding: 5px 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    display: flex;
+    /* Aligns tick mark and text */
+    align-items: center;
+    background-color: #294861;
+}
+
+.dropdownItem:hover {
+    background-color: #678fb5;
+    /* Darker shade for hover */
+}
+
+/*
+ * NEW: Container for the tick mark to ensure alignment
+ */
+.tickContainer {
+    display: inline-block;
+    width: 15px;
+    /* Gives space for the tick so text aligns */
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.arrow {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #ffffff;
+    transition: all 0.3s ease;
+}
+
+/*
+ * MODIFIED: The arrow now rotates and fades out when open
+ */
+/* .arrow.open {
+    transform: rotate(180deg);
+    opacity: 0;
+
+} */

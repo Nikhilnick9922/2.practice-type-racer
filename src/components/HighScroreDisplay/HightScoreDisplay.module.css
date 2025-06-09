@@ -8,6 +8,15 @@
     /* --- HIGHLIGHT END --- */
 }
 
+
+.container {
+    /* width: 100%; */
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
 .table {
     width: 100%;
     border-collapse: collapse;
@@ -60,7 +69,7 @@
     /* Light blue background for SR column */
     width: 25px;
     /* SR column width */
-
+    color: #828588;
 
 }
 
