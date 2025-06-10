@@ -1,10 +1,10 @@
 import "./App.css";
-import HightScoreDisplay from "./components/HighScroreDisplay/HightScoreDisplay";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
   return (
     <div className="container">
-      <HightScoreDisplay />
+      <Footer />
     </div>
   );
 };

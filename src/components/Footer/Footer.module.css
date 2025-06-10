@@ -1,0 +1,106 @@
+.container {
+    background-color: #015893;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.copyright {
+    color: white;
+    font-size: 16.192px;
+    font-weight: 300;
+}
+
+
+/* links */
+.navList {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+
+.navLink {
+    text-decoration: none;
+    color: white;
+    padding: 0 10px;
+}
+
+.navLink:hover {
+    text-decoration: underline;
+}
+
+.separator {
+    color: white;
+}
+
+
+/* links */
+
+
+
+.shockwave {
+    width: 150px;
+}
+
+
+.btn {
+    padding: 18px 10px;
+    background-color: #06bcf5;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 17%;
+}
+
+
+.btn:hover {
+    filter: brightness(0.85) !important;
+    color: black;
+
+}
+
+
+.spanIcon {
+    font-size: 22px;
+}
+
+.btn:hover .spanIcon {
+    color: white;
+}
+
+
+.socialContainer {
+    /* background-color: #2b6cb0; */
+    /* A blue similar to the image */
+    padding: 10px 15px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 19px;
+    /* Adjust space between icons */
+}
+
+.socialLink {
+    color: white;
+    font-size: 25px;
+    /* Adjust icon size */
+    transition: transform 0.2s ease-in-out;
+}
+
+.socialLink:hover {
+    color: #e2e8f0;
+    /* A slightly off-white on hover */
+    transform: scale(1.1);
+}
